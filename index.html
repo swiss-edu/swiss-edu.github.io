@@ -1,9 +1,29 @@
+<!-- Define a layout (style) for the website -->
 ---
 layout: default
 ---
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!-- Plotly - include javascript version of the plotly graphs we created -->
+<script src="scripts/plotly-1.22.0.min.js"></script>
 
+<!-- jQuery - used here to include other HTML files in this one, such as choropleth maps -->
+<script src="scripts/jquery-3.1.1.slim.min.js"></script>
+
+<!-- Pre-inclusion of the choropleth maps-->
+<script> 
+    $(function(){
+      $("#quality_map").load("resources/1_quality_map.html"); 
+    });
+</script>
+<script> 
+    $(function(){
+      $("#quantity_map").load("resources/1_quantity_map.html"); 
+    });
+</script> 
+
+<!-- The actual content begins here ! -->
+
+<!-- h1 cannot be used for the website title, at the top of the page. So the next titles should be used: h2, h3 etc. -->
 <h2>Motivation</h2>
 <p>Switzerland prides itself for being one of the most innovative countries in the world. An important measure of innovation is research output, measured through publication intensity. Switzerland's Referendum vote has created doubts regarding research funding and exchanges coming from the EU, which could affect their position as innovators. In this project, we attempted to assess whether this is a legitimate concern or not.
 </p>
@@ -35,6 +55,9 @@ Our approach is made of correlations along various parameters:
 
 
 <h2>Who Switzerland collaborates with?</h2>
+<div id="quantity_map"></div>
+<br/>
+<div id="quality_map"></div>
 
 
 <h2>How is Switzerland international collaboration impacted by the referendum?</h2>
