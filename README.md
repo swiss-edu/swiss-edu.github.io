@@ -1,7 +1,8 @@
 ## Could the 2014 Referendum Against Mass Immigration affect Switzerland's position as a top research collaborator?
 
 
-<script src='whatever'>{newline}</script>
+<script src='whatever'>
+</script>
 
 You can use the [editor on GitHub](https://github.com/swiss-edu/swiss-edu.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
