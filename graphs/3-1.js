@@ -109,7 +109,7 @@ layout = {
       ax: 0, 
       ay: -30, 
       showarrow: true, 
-      text: 'legislative bill', 
+      text: 'bill', 
       xref: 'x', 
       yref: 'y'
     }, 
